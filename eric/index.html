@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#1746d1">
+  <title>ERIC TikTok — TikTok Archive</title>
+  <meta name="description" content="Fan-made gallery of ERIC TikTok videos.">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body data-collection="eric">
+  <main id="top">
+    <header class="masthead">
+      <div class="utility"><a class="brand" href="../">TIKTOK / ARCHIVE</a><nav><button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">EN</button><span>/</span><a href="https://x.com/tbzarchive1206_" target="_blank" rel="noopener noreferrer">TWITTER ↗</a></nav></div>
+      <h1><span class="solid">ERIC</span><span class="outline">TIKTOK</span></h1>
+      <div class="stats"><p><strong id="videoCount">0</strong> <span data-i18n="videos">VIDEOS</span></p><i></i><p><strong id="yearRange">—</strong></p><i></i><p><span data-i18n="source">SOURCE</span> <strong>DRIVE</strong></p></div>
+    </header>
+    <section class="controls" aria-label="Archive controls">
+      <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="SEARCH VIDEOS..." autocomplete="off"></label>
+      <div class="filter-row"><label><span data-i18n="year">YEAR</span><select id="yearFilter"><option value="all">ALL YEARS</option></select></label><label><span data-i18n="sort">SORT</span><select id="sortFilter"><option value="newest">NEWEST FIRST</option><option value="oldest">OLDEST FIRST</option><option value="az">A—Z</option></select></label></div>
+      <div class="year-tabs" id="yearTabs" aria-label="Filter by year"></div>
+    </section>
+    <section class="archive-section">
+      <div class="results-head"><p id="resultsLabel">ALL VIDEOS</p><a class="source-link" id="sourceLink" href="#" target="_blank" rel="noopener noreferrer"><span data-i18n="sourceFolder">OPEN SOURCE FOLDER</span> ↗</a></div>
+      <div class="video-grid" id="videoGrid" aria-live="polite"></div>
+      <div class="empty" id="empty" hidden><strong>NO RESULTS</strong><span data-i18n="empty">TRY CHANGING THE SEARCH OR FILTERS.</span></div>
+      <button class="load-more" id="loadMore" type="button">LOAD MORE ↓</button>
+    </section>
+    <footer><a href="../">← <span data-i18n="tiktokArchive">TIKTOK ARCHIVE</span></a><a href="#top"><span data-i18n="backTop">BACK TO TOP</span> ↑</a></footer>
+  </main>
+  <dialog id="playerDialog" aria-labelledby="playerTitle"><div class="player-shell"><header class="player-head"><div><div class="player-kicker" id="playerKicker"></div><h2 id="playerTitle"></h2></div><div class="player-actions"><a id="downloadVideo" href="#" target="_blank" rel="noopener noreferrer"><span data-i18n="download">DOWNLOAD</span> ↓</a><a id="originalVideo" href="#" target="_blank" rel="noopener noreferrer"><span data-i18n="openOriginal">OPEN ORIGINAL</span> ↗</a><button id="closePlayer" type="button" aria-label="Close">×</button></div></header><div class="player-stage"><iframe id="playerFrame" title="TikTok video player" allow="autoplay; fullscreen" allowfullscreen></iframe></div><p class="player-note" data-i18n="playerNote">THE VIDEO IS PLAYED DIRECTLY FROM THE PUBLIC ARCHIVE ON GOOGLE DRIVE.</p></div></dialog>
+  <script src="../data.js"></script>
+  <script src="../app.js"></script>
+</body>
+</html>
