@@ -34,6 +34,7 @@
     function applyLanguage(){document.documentElement.lang=lang==="ko"?"ko":"en";button.textContent=lang==="ko"?"KOR":"EN";document.querySelectorAll("[data-i18n]").forEach(el=>el.textContent=copy[lang][el.dataset.i18n])}
     button.addEventListener("click",()=>{lang=lang==="en"?"ko":"en";localStorage.setItem("tbzTikTokLang",lang);applyLanguage()});applyArchiveData();applyLanguage();
   </script>
+  <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "86b44fc0df8847b9a0b9c48b6766cd38"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
 
